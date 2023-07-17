@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const MovieDetailsContainer = styled.div`
   display: flex;
   gap: 20px;
-  border-botoom: 1px solid #000;
-  border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  
+  border-radius: 9px;
+  box-shadow: -2px -2px 8px 8px rgba(0, 0, 0, 0.3);
 
 `;
 
@@ -13,7 +13,6 @@ export const MovieImage = styled.img`
   width: 300px;
   height: 450px;
   border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   cover: fit;
 `;
 
@@ -32,10 +31,8 @@ export const MovieOverview = styled.p`
 export const AditionalInfoContainer = styled.div`
 margin-top: 20px;
 padding: 20px;
-border-botoom: 1px solid #000;
-border-top: 1px solid #000;
 border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.3);
 `;
 
 
@@ -44,14 +41,14 @@ export const ButtonTrailer = styled.button`
   padding: 10px 15px;
   font-size: 16px;
   background-color: #f0f0f0;
-  border: none;
-  border-radius: 4px;
+  border: 1px solid;
+  border-radius: 50px;
   cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 700;
 
   &:hover {
-    background-color: #e0e0e0;
+    background-color: #EFE1D1;
     color: #d32f2f;
   }
 `;

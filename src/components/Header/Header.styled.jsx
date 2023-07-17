@@ -8,10 +8,10 @@ export const StyledLink = styled(NavLink)`
   font-size: 20px;
   font-weight: 700;
   &:hover {
-    color: orange;
+    color: #F31559;
   }
   &.active {
-    color: orange;
+    color: #F31559;
   }
 `;
 
@@ -21,9 +21,9 @@ export const StyledList = styled.ul`
   align-items: center;
   padding: 20px;
   list-style: none;
-  box-shadow: 10px 0px 10px 10px rgba(0, 0, 0, 0.75);
-  border-bottom: 1px solid black;
-  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #D4E2D4;
   position: sticky;
   top: 0;
   z-index: 1000;

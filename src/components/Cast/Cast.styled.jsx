@@ -29,7 +29,7 @@ export const CastImage = styled.img`
 `;
 
 export const CastName = styled.h2`
-  margin: 10px 0;
+  margin: 10px;
   font-size: 16px;
   font-weight: bold;
 `;
@@ -37,5 +37,5 @@ export const CastName = styled.h2`
 export const CastCharacter = styled.p`
   font-size: 14px;
   color: #666;
-  margin-bottom: 10px;
+  margin: 10px;
 `;
