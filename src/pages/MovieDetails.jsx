@@ -4,7 +4,6 @@ import MovieVideo from 'components/MovieVideo/MovieVideo';
 import { useEffect, useState, useRef } from 'react';
 import { useParams, Link, Outlet, useLocation } from 'react-router-dom';
 import { fetchMovieDetails } from 'utils/api';
-
 import {
   MovieDetailsContainer,
   MovieImage,
@@ -13,10 +12,11 @@ import {
   MovieOverview,
   ButtonTrailer,
   AditionalInfoContainer,
-} from '.././components/MovieDetailsComponent/MovieDetails.styled';
+} from '../components/MovieDetailsComponent/MovieDetails.styled';
 import Loader from 'components/Loader/Loader';
 
-// const defaultImage = ''
+const defaultImage =
+'https://03656.com.ua/wp-content/uploads/2020/04/zachineno.jpg';
 
 const MovieDetails = () => {
   const { movieId } = useParams();
@@ -38,7 +38,7 @@ const MovieDetails = () => {
     fetchMovieData();
   }, [movieId]);
 
-  const handleWatchtrailer = () => {
+  const handleWatchTrailer = () => {
     setShowTrailer(true);
   };
   if (!movie) {
@@ -110,5 +110,6 @@ const MovieDetails = () => {
       </Suspense>
     </div>
   );
-}
+};
+
 export default MovieDetails;

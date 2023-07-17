@@ -8,7 +8,7 @@ const Home = () => {
   useEffect (() => {
     const fetchMovies = async () => {
       try {
-        const trendingMovies = aweit fetchTrendingMovies();
+        const trendingMovies = await fetchTrendingMovies();
         setMovies(trendingMovies);
       } catch (error) {
         console.log('erroe', error);

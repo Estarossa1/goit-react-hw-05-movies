@@ -19,10 +19,12 @@ const Movies = () => {
         searchParams.set('query', query);
         navigate(`/movies?${searchParams.toString()}`);
       } catch (error) {
-        console.error('error', error);
+        console.log('error', error);
         setSearchResults([]);
       }
-  }, [navigate, searchParams]);
+    },
+    [navigate, searchParams]
+  );
 
   useEffect(() => {
     const fetchMovies = async () => {
@@ -39,10 +41,10 @@ const Movies = () => {
   }, [movieId]);
 
   useEffect(() => {
-      const query = searchParams.get('query');
-      if (query) {
-        handleSearchSubmit(query);
-      }
+    const query = searchParams.get('query');
+    if (query) {
+      handleSearchSubmit(query);
+    }
   }, [searchParams, handleSearchSubmit]);
 
   return (
@@ -51,7 +53,7 @@ const Movies = () => {
       <Searchbar onSubmit={handleSearchSubmit} />
       <MovieList movies={searchResults} />
     </div>
-  );  
+  );
 };
 
 export default Movies;
