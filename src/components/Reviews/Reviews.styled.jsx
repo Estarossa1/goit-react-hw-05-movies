@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const ReviewsContainer = styled.div`
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 4px;
+  margin-top: 20px;
+  border-radius: 5px;
   background-color: #fff;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px -2px 6px 6px rgba(0, 0, 0, 0.3);
 
   h1 {
     margin-bottom: 20px;

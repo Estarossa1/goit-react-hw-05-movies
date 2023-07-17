@@ -14,7 +14,7 @@ export const CastList = styled.ul`
 export const CastItem = styled.li`
   width: 200px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -2px -2px 6px 6px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   transition: transform 0.3s ease;
 

@@ -16,7 +16,7 @@ import {
 import Loader from 'components/Loader/Loader';
 
 const defaultImage =
-'https://03656.com.ua/wp-content/uploads/2020/04/zachineno.jpg';
+'https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png'
 
 const MovieDetails = () => {
   const { movieId } = useParams();

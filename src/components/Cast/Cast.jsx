@@ -12,7 +12,8 @@ import { useParams } from 'react-router-dom';
 import { fetchMovieCredits } from 'utils/api';
 
 const defaultImage = 
-'https://03656.com.ua/wp-content/uploads/2020/04/zachineno.jpg';
+'https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png'
+
 const Cast = () => {
   const [cast, setCast] = useState([]);
   const { movieId } = useParams();
